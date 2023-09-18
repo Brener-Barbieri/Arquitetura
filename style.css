@@ -16,6 +16,11 @@ a{
   margin: 0 auto;
 }
 
+.section{
+  margin-top: 24px;
+  margin-bottom: 64px;
+}
+
 .banner{
   display: grid;
   grid-template-columns: 1fr 2fr;
