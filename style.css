@@ -17,7 +17,6 @@ a{
 }
 
 .header .container{
-
   justify-content: space-between;
   align-items: center;
   margin-top: 24px;
@@ -29,11 +28,11 @@ a{
   display: none;
 }
 
-.header .list .items{
+.header .list .item{
   padding: 6px 24px;
 }
 
-.header .list .items:hover{
+.header .list .item:hover{
   border-top: solid black 1px;
   border-bottom: solid black 1px;
 }
@@ -48,12 +47,12 @@ a{
   display: block;
   margin-right: 32px;
   margin-top: -16px;
+  background-color: white;
+  border: none;
 }
 
 @media(min-width: 600px){
   .header .menu{
     display: none;
-    
   }
 }
-
