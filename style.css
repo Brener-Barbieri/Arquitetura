@@ -3,12 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --gray: #BDBDBD;
+  --black: #000;
+  --gray-background: #F3F3F3;
+  --white: #ffffff;
+}
+
 li{
   list-style: none;
 }
 a{
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .container{
@@ -24,7 +32,7 @@ a{
 .section.-contact .container .title{
   font-size: 4rem;
   font-weight: lighter;
-  color: #BDBDBD;
+  color: var(--gray);
   margin-bottom: 24px;
 }
 
@@ -42,16 +50,27 @@ a{
 
 
 .section.-contact .container .input{
-  background-color: #F3F3F3;
+  background-color: var(--gray-background);
   padding: 16px;
   border: none;
 }
 
+.section.-contact .container .input:focus{
+  outline: 1px solid var(--gray);
+}
+
 .section.-contact .container .button-email{
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border: none;
   padding: 28px;
   max-width: 60%;
   margin-top: 40px;
+  cursor: pointer;
+}
+
+.section.-contact .container .button-email:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
+  background-color: var(--gray);
 }
