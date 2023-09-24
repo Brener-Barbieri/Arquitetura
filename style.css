@@ -58,7 +58,7 @@ a{
   margin-top: 16px;
 }
 
-.section.-description .container .column-text .button-link{
+.section.-description .button-link{
   background-color: white;
   padding: 24px 32px;
   display: block;
