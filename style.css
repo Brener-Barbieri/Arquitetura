@@ -3,12 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --gray: #BDBDBD;
+  --black: #000;
+  --gray-background: #F3F3F3;
+  --white: #ffffff;
+}
+
+html{
+  font-family:Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 li{
   list-style: none;
 }
 a{
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .container{
@@ -46,4 +57,119 @@ a{
   display: grid;
   grid-template-columns: 80px auto;
   align-items: center;
+}
+
+.section.-contact .container .title{
+  font-size: 4rem;
+  font-weight: lighter;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.section.-contact .form-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section.-contact .container .columns{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.section.-contact .container .input{
+  background-color: var(--gray-background);
+  padding: 16px;
+  border: none;
+}
+
+.section.-contact .container .input:focus{
+  outline: 1px solid var(--gray);
+}
+
+.section.-contact .container .button-email{
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 28px;
+  max-width: 60%;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.section.-contact .container .button-email:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
+  background-color: var(--gray);
+}
+
+.header .container{
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.header .list{
+  display: none;
+}
+
+.header .list .item{
+  padding: 6px 24px;
+  border-top: solid transparent 1px;
+  border-bottom: solid transparent 1px;
+}
+
+.header .list .item:hover{
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+@media(min-width: 600px){
+  .header .list{
+    display: flex;
+  }
+}
+
+.header .menu{
+  display: block;
+  margin-right: 32px;
+  margin-top: -16px;
+  background-color: white;
+  border: none;
+}
+
+@media(min-width: 600px){
+  .header .menu{
+    display: none;
+  }
+}
+
+.banner{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.banner .text .title{
+  font-weight: lighter;
+  color: gray;
+  font-size: 4rem;
+  margin-top: 340px;
+}
+
+.banner .text .subtitle{
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.banner .text .numbers{
+  margin-top: 240px;
+}
+
+.banner .image{
+  width: 100%;
 }
