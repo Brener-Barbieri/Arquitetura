@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 :root{
   --gray: #BDBDBD;
   --black: #000;
@@ -33,6 +32,33 @@ a{
   margin-bottom: 64px;
 }
 
+.section.-mission .container .title{
+  font-size: 4rem;
+  font-weight: lighter;
+  color: #BDBDBD;
+  margin-bottom: 40px;
+}
+
+.section.-mission .container .columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section.-mission .container .columns .number{
+  font-size: 8rem;
+  font-weight: bold;
+  color: #F2F2F2;
+}
+
+.section.-mission .container .columns .text{
+  word-break: break-all;
+  font-size: 1.2rem;
+  padding-right: 190px;
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+}
+
 .section.-contact .container .title{
   font-size: 4rem;
   font-weight: lighter;
@@ -51,7 +77,6 @@ a{
   grid-template-columns: 1fr 2fr;
   gap: 40px;
 }
-
 
 .section.-contact .container .input{
   background-color: var(--gray-background);
