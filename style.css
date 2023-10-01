@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --gray: #BDBDBD;
+  --black: #000;
+  --gray-background: #F3F3F3;
+  --white: #ffffff;
+}
 
 :root{
   --black: #000;
@@ -20,6 +26,7 @@ li{
 a{
   text-decoration: none;
   color: inherit;
+
 }
 
 .container{
@@ -30,6 +37,188 @@ a{
 .section{
   margin-top: 24px;
   margin-bottom: 64px;
+}
+
+.section.-description .container{
+  background-color: rgb(242, 242, 242);
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  padding: 32px 64px 0 64px;
+  gap: 32px;
+  box-shadow: inset 0 -40px white;
+}
+
+.section.-description .container .image{
+  width: 100%;
+}
+
+.section.-description .container .column-images{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section.-description .container .column-image{
+ display: block;
+ padding-top: 44px;
+}
+
+.section.-description .container .column-text .title{
+  font-size: 4rem;
+  font-weight: lighter;
+  color: gray;
+  margin-top: 12px;
+}
+
+.section.-description .container .column-text .text{
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+.section.-description .button-link{
+  background-color: white;
+  padding: 24px 32px;
+  display: block;
+  margin-top: 78px;
+  width: 60%;
+}
+
+.section.-description .container .column-text .button-link:hover{
+  background-color: rgb(223, 223, 223); 
+  transition: 0.4S;
+}
+
+.section.-mission .container .title{
+  font-size: 4rem;
+  font-weight: lighter;
+  color: #BDBDBD;
+  margin-bottom: 40px;
+}
+
+.section.-projects .item{
+  position: relative;
+}
+
+.section.-projects .item .link{
+  position: absolute;
+  display: none;
+  padding: 44px ;
+}
+
+.section.-projects .item .link .title{
+  margin-bottom: 12px;
+  color: white;
+}
+
+.section.-projects .item .link .subtitle{
+  color: white;
+  font-weight: lighter;
+}
+
+.section.-projects .item:hover .link{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.section.-projects .item .image{
+  width: 100%;
+  height: 100%;
+}
+
+.section.-projects .column-primary{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 40px;
+
+}
+
+.section.-projects .column-secundary{
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1.5fr;
+  gap: 36px;
+}
+
+.section.-projects .button-link{
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  display: block;
+  width: 16%;
+  margin-top: 36px;
+  margin-left: auto;
+}
+
+.section.-projects .arrow{
+  padding-left: 4px;
+}
+
+.section.-mission .container .columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section.-mission .container .columns .number{
+  font-size: 8rem;
+  font-weight: bold;
+  color: #F2F2F2;
+}
+
+.section.-mission .container .columns .text{
+  word-break: break-all;
+  font-size: 1.2rem;
+  padding-right: 190px;
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+}
+
+.section.-contact .container .title{
+  font-size: 4rem;
+  font-weight: lighter;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.section.-contact .form-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section.-contact .container .columns{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.section.-contact .container .input{
+  background-color: var(--gray-background);
+  padding: 16px;
+  border: none;
+}
+
+.section.-contact .container .input:focus{
+  outline: 1px solid var(--gray);
+}
+
+.section.-contact .container .button-email{
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 28px;
+  max-width: 60%;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.section.-contact .container .button-email:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
+  background-color: var(--gray);
 }
 
 .header .container{
