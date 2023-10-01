@@ -89,6 +89,66 @@ a{
   margin-bottom: 40px;
 }
 
+.section.-projects .item{
+  position: relative;
+}
+
+.section.-projects .item .link{
+  position: absolute;
+  display: none;
+  padding: 44px ;
+}
+
+.section.-projects .item .link .title{
+  margin-bottom: 12px;
+  color: white;
+}
+
+.section.-projects .item .link .subtitle{
+  color: white;
+  font-weight: lighter;
+}
+
+.section.-projects .item:hover .link{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.section.-projects .item .image{
+  width: 100%;
+  height: 100%;
+}
+
+.section.-projects .column-primary{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 40px;
+
+}
+
+.section.-projects .column-secundary{
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1.5fr;
+  gap: 36px;
+}
+
+.section.-projects .button-link{
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  display: block;
+  width: 16%;
+  margin-top: 36px;
+  margin-left: auto;
+}
+
+.section.-projects .arrow{
+  padding-left: 4px;
+}
+
 .section.-mission .container .columns{
   display: grid;
   grid-template-columns: 1fr 1fr;
