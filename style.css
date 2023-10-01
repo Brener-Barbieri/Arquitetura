@@ -32,6 +32,56 @@ a{
   margin-bottom: 64px;
 }
 
+.section.-description .container{
+  background-color: rgb(242, 242, 242);
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  padding: 32px 64px 0 64px;
+  gap: 32px;
+  box-shadow: inset 0 -40px white;
+}
+
+.section.-description .container .image{
+  width: 100%;
+}
+
+.section.-description .container .column-images{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section.-description .container .column-image{
+ display: block;
+ padding-top: 44px;
+}
+
+.section.-description .container .column-text .title{
+  font-size: 4rem;
+  font-weight: lighter;
+  color: gray;
+  margin-top: 12px;
+}
+
+.section.-description .container .column-text .text{
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+.section.-description .button-link{
+  background-color: white;
+  padding: 24px 32px;
+  display: block;
+  margin-top: 78px;
+  width: 60%;
+}
+
+.section.-description .container .column-text .button-link:hover{
+  background-color: rgb(223, 223, 223); 
+  transition: 0.4S;
+}
+
 .section.-mission .container .title{
   font-size: 4rem;
   font-weight: lighter;
