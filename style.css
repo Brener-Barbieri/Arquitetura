@@ -10,6 +10,12 @@
   --white: #ffffff;
 }
 
+:root{
+  --black: #000;
+  --white: #fff;
+  --backgorund-black: #2C2C2C;
+}
+
 html{
   font-family:Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -19,7 +25,8 @@ li{
 }
 a{
   text-decoration: none;
-  color: var(--black);
+  color: inherit;
+
 }
 
 .container{
@@ -282,4 +289,63 @@ a{
 
 .banner .image{
   width: 100%;
+}
+
+.footer{
+  background-color: var(--backgorund-black);
+  color: var(--white);
+  padding-top: 24px;
+}
+
+.footer .columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  color: var(--white);
+  margin-top: 24px;
+}
+
+.footer .columns .title{
+  margin-bottom: 24px;
+}
+
+.footer .columns .icon{
+  margin-right: 6px;
+}
+
+.footer .columns .information{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer .columns .contact{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer .columns .media{
+  display: flex;
+  gap: 28px;
+  text-align: center;
+}
+
+.footer .columns .social-media{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .style{
+  border-top: solid 1px gray;
+  margin-top: 40px;
+}
+
+.footer .text{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
 }
