@@ -439,6 +439,8 @@ a{
 
 .layout .container .image{
   width: 100%;
+}
+
 .slide-project .list{
   display: flex;
   flex-direction: column;
