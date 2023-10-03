@@ -367,6 +367,48 @@ a{
   color: var(--black);
 }
 
+.contact{
+  margin-bottom: 64px;
+}
+
+.contact .container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.contact .container .title{
+  margin-top: 64px;
+}
+
+.contact .container .name{
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+.contact .container .list{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact .container .item.-number{
+  font-weight: bold;
+}
+
+.contact .container .image{
+  width: 100%;
+}
+
+.contact .container .button{
+  background-color: var(--black);
+  color: var(--white);
+  padding: 24px;
+  display: block;
+  max-width: 44%;
+  text-align: center;
+  margin-top: 72px;
+  }
+
 .certification .container .title{
   margin-top: 60px;
   margin-bottom: 400px;
