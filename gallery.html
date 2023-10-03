@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Arquitetura</title>
 </head>
@@ -28,16 +31,16 @@
       </a>
       <ul id="list-menu" class="list">
         <li class="item">
-          <a href="./index.html">Inicio</a>
+          <a href="./">Inicio</a>
         </li>
         <li class="item">
-          <a href="./gallery.html">Galeria</a>
+          <a href="./">Galeria</a>
         </li>
         <li class="item">
-          <a href="./page-projects.html">Projetos</a>
+          <a href="./">Projetos</a>
         </li>
         <li class="item">
-          <a href="./certifications.html">Certificados</a>
+          <a href="./">Certificados</a>
         </li>
         <li class="item">
           <a href="./">Contatos</a>
@@ -55,131 +58,37 @@
     </nav>
   </header>
 
-  <section class="section">
+  <section class="gallery">
     <div class="container">
-      <div class="banner">
-        <div class="text">
-          <h1 class="title">PROJECT <br><span class="subtitle">LORUN</span></h1>
-          <img class="numbers" src="./img/slide-numbers.png" alt="">
-        </div>
-        <img class="image" src="./img/Rectangle-6.png" alt="prédio">
-      </div>
+      <h1 class="title">Photo <br><span class="subtitle">Gallery</span></h1>
     </div>
   </section>
 
-  <section class="section -description">
+  <section class="splide" aria-label="Splide Basic HTML Example">
     <div class="container">
-      <div class="column-images">
-        <img class="image" src="./img/Rectangle 8.png" alt="projeto de Arquitetura">
-        <img class="image" src="./img/Rectangle 10.png" alt="projeto de Arquitetura">
-      </div>
-      <div class="column-image">
-        <img class="image" src="./img/Rectangle 9.png" alt="projeto de Arquitetura">
-      </div>
-      <div class="column-text">
-        <h2 class="title">About</h2>
-        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        <a class="button-link" href="./">READ MORE <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.49976C0 4.22361 0.223858 3.99976 0.5 3.99976L16.5 3.99976C16.7761 3.99976 17 4.22361 17 4.49976C17 4.7759 16.7761 4.99976 16.5 4.99976L0.5 4.99976C0.223858 4.99976 0 4.7759 0 4.49976Z" fill="#333333" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646202C12.8417 0.45094 13.1583 0.45094 13.3536 0.646202L17.2071 4.49976L13.3536 8.35331C13.1583 8.54857 12.8417 8.54857 12.6464 8.35331C12.4512 8.15805 12.4512 7.84147 12.6464 7.6462L15.7929 4.49976L12.6464 1.35331C12.4512 1.15805 12.4512 0.841465 12.6464 0.646202Z" fill="#333333" />
-          </svg></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section -mission">
-    <div class="container">
-      <h2 class="title">Main Focus/Mission Statement</h2>
-      <ul class="columns">
-        <li class="text"> <span class="number"> 1 </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</li>
-        <li class="text"><span class="number"> 2 </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section -projects">
-    <div class="container">
-      <h2 class="title">Our Projects</h2>
-      <ul class="column-primary">
-        <li class="item">
-          <a class="link" href="./">
-            <h3 class="title">Sample <br>Project</h3>
-            <p class="subtitle">VIEW MORE <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.5C0 4.22386 0.223858 4 0.5 4L16.5 4C16.7761 4 17 4.22386 17 4.5C17 4.77614 16.7761 5 16.5 5L0.5 5C0.223858 5 0 4.77614 0 4.5Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646447C12.8417 0.451184 13.1583 0.451184 13.3536 0.646447L17.2071 4.5L13.3536 8.35355C13.1583 8.54882 12.8417 8.54882 12.6464 8.35355C12.4512 8.15829 12.4512 7.84171 12.6464 7.64645L15.7929 4.5L12.6464 1.35355C12.4512 1.15829 12.4512 0.841709 12.6464 0.646447Z" fill="white" />
-              </svg></p>
-          </a>
-          <img class="image" src="./img/Rectangle 12.png" alt="estadio fechado">
-        </li>
-        <li class="item">
-          <a class="link" href="./">
-            <h3 class="title">Sample <br>Project</h3>
-            <p class="subtitle">VIEW MORE <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.5C0 4.22386 0.223858 4 0.5 4L16.5 4C16.7761 4 17 4.22386 17 4.5C17 4.77614 16.7761 5 16.5 5L0.5 5C0.223858 5 0 4.77614 0 4.5Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646447C12.8417 0.451184 13.1583 0.451184 13.3536 0.646447L17.2071 4.5L13.3536 8.35355C13.1583 8.54882 12.8417 8.54882 12.6464 8.35355C12.4512 8.15829 12.4512 7.84171 12.6464 7.64645L15.7929 4.5L12.6464 1.35355C12.4512 1.15829 12.4512 0.841709 12.6464 0.646447Z" fill="white" />
-              </svg></p>
-          </a>
-          <img class="image" src="./img/image 15.png" alt="construcao">
-        </li>
-      </ul>
-      <ul class="column-secundary">
-        <li class="item"> <a class="link" href="./">
-            <h3 class="title">Sample <br>Project</h3>
-            <p class="subtitle">VIEW MORE <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.5C0 4.22386 0.223858 4 0.5 4L16.5 4C16.7761 4 17 4.22386 17 4.5C17 4.77614 16.7761 5 16.5 5L0.5 5C0.223858 5 0 4.77614 0 4.5Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646447C12.8417 0.451184 13.1583 0.451184 13.3536 0.646447L17.2071 4.5L13.3536 8.35355C13.1583 8.54882 12.8417 8.54882 12.6464 8.35355C12.4512 8.15829 12.4512 7.84171 12.6464 7.64645L15.7929 4.5L12.6464 1.35355C12.4512 1.15829 12.4512 0.841709 12.6464 0.646447Z" fill="white" />
-              </svg></p>
-          </a>
-          <img class="image" src="./img/image 16.png" alt="estadio aberto">
-        </li>
-        <li class="item">
-          <a class="link" href="./">
-            <h3 class="title">Sample <br>Project</h3>
-            <p class="subtitle">VIEW MORE <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.5C0 4.22386 0.223858 4 0.5 4L16.5 4C16.7761 4 17 4.22386 17 4.5C17 4.77614 16.7761 5 16.5 5L0.5 5C0.223858 5 0 4.77614 0 4.5Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646447C12.8417 0.451184 13.1583 0.451184 13.3536 0.646447L17.2071 4.5L13.3536 8.35355C13.1583 8.54882 12.8417 8.54882 12.6464 8.35355C12.4512 8.15829 12.4512 7.84171 12.6464 7.64645L15.7929 4.5L12.6464 1.35355C12.4512 1.15829 12.4512 0.841709 12.6464 0.646447Z" fill="white" />
-              </svg></p>
-          </a>
-          <img class="image" src="./img/image 17.png" alt="predio">
-        </li>
-        <li class="item">
-          <a class="link" href="./">
-            <h3 class="title">Sample <br>Project</h3>
-            <p class="subtitle">VIEW MORE <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.5C0 4.22386 0.223858 4 0.5 4L16.5 4C16.7761 4 17 4.22386 17 4.5C17 4.77614 16.7761 5 16.5 5L0.5 5C0.223858 5 0 4.77614 0 4.5Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646447C12.8417 0.451184 13.1583 0.451184 13.3536 0.646447L17.2071 4.5L13.3536 8.35355C13.1583 8.54882 12.8417 8.54882 12.6464 8.35355C12.4512 8.15829 12.4512 7.84171 12.6464 7.64645L15.7929 4.5L12.6464 1.35355C12.4512 1.15829 12.4512 0.841709 12.6464 0.646447Z" fill="white" />
-              </svg></p>
-          </a>
-          <img class="image" src="./img/image 18.png" alt="construcao">
-        </li>
-      </ul>
-      <a class="button-link" href="./">All Projects<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.49976C0 4.22361 0.223858 3.99976 0.5 3.99976L16.5 3.99976C16.7761 3.99976 17 4.22361 17 4.49976C17 4.7759 16.7761 4.99976 16.5 4.99976L0.5 4.99976C0.223858 4.99976 0 4.7759 0 4.49976Z" fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646202C12.8417 0.45094 13.1583 0.45094 13.3536 0.646202L17.2071 4.49976L13.3536 8.35331C13.1583 8.54857 12.8417 8.54857 12.6464 8.35331C12.4512 8.15805 12.4512 7.84147 12.6464 7.6462L15.7929 4.49976L12.6464 1.35331C12.4512 1.15805 12.4512 0.841465 12.6464 0.646202Z" fill="white" />
-        </svg></a>
-    </div>
-  </section>
-
-  <section class="section -contact">
-    <div class="container">
-      <h2 class="title">Contact Us</h2>
-      <div class="columns">
-        <div class="form">
-          <form class="form-contact">
-            <input class="input" name="name" required placeholder="Name" type="text">
-            <input class="input" name="phone" required placeholder="Phone Number" type="phone">
-            <input class="input" name="name" required placeholder="Interested In" type="text">
-            <input class="input" name="email" required placeholder="Message" type="email">
-            <textarea class="input -text" name="message" required="" placeholder="Mensagem" rows="4"></textarea>
-            <button class="button-email" type="submit">Send Email <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.49976C0 4.22361 0.223858 3.99976 0.5 3.99976L16.5 3.99976C16.7761 3.99976 17 4.22361 17 4.49976C17 4.7759 16.7761 4.99976 16.5 4.99976L0.5 4.99976C0.223858 4.99976 0 4.7759 0 4.49976Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 0.646202C12.8417 0.45094 13.1583 0.45094 13.3536 0.646202L17.2071 4.49976L13.3536 8.35331C13.1583 8.54857 12.8417 8.54857 12.6464 8.35331C12.4512 8.15805 12.4512 7.84147 12.6464 7.6462L15.7929 4.49976L12.6464 1.35331C12.4512 1.15805 12.4512 0.841465 12.6464 0.646202Z" fill="white" />
-              </svg></button>
-          </form>
-        </div>
-        <picture>
-          <img src="./img/image-12.png" alt="">
-        </picture>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="./img/Rectangle-22.png" alt="">imagem cinza</li>
+          <li class="splide__slide"><img src="./img/rectangle-23.png" alt="">farol no mar</li>
+          <li class="splide__slide"><img src="./img/Rectangle-24.png" alt="">varanda de um predio</li>
+          <li class="splide__slide"><img src="./img/Rectangle-25.png" alt="">farol do mar</li>
+          <li class="splide__slide"><img src="./img/Rectangle-26.png" alt="">castelo</li>
+          <li class="splide__slide"><img src="./img/Rectangle-27.png" alt="">interior de um castelo</li>
+          <li class="splide__slide"><img src="./img/Rectangle-28.png" alt="">rua</li>
+          <li class="splide__slide"><img src="./img/Rectangle-29.png" alt="">predio antigo</li>
+          <li class="splide__slide"><img src="./img/Rectangle-30.png" alt="">mar</li>
+          <li class="splide__slide"><img src="./img/Rectangle-31.png" alt="">predio</li>
+          <li class="splide__slide"><img src="./img/Rectangle-22.png" alt="">imagem cinza</li>
+          <li class="splide__slide"><img src="./img/rectangle-23.png" alt="">farol no mar</li>
+          <li class="splide__slide"><img src="./img/Rectangle-24.png" alt="">varanda de um predio</li>
+          <li class="splide__slide"><img src="./img/Rectangle-25.png" alt="">farol do mar</li>
+          <li class="splide__slide"><img src="./img/Rectangle-26.png" alt="">castelo</li>
+          <li class="splide__slide"><img src="./img/Rectangle-27.png" alt="">interior de um castelo</li>
+          <li class="splide__slide"><img src="./img/Rectangle-28.png" alt="">rua</li>
+          <li class="splide__slide"><img src="./img/Rectangle-29.png" alt="">predio antigo</li>
+          <li class="splide__slide"><img src="./img/Rectangle-30.png" alt="">mar</li>
+          <li class="splide__slide"><img src="./img/Rectangle-31.png" alt="">predio</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -272,8 +181,14 @@
       </nav>
     </div>
   </footer>
-
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js
+"></script>
   <script src="javaScript.js"></script>
+
 </body>
 
 </html>

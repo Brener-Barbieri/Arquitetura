@@ -350,7 +350,12 @@ a{
   text-align: center;
 }
 
-.title{
+.splide__track{
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.gallery .title{
   font-size: 3rem;
   font-weight: lighter;
   color: var(--gray);
@@ -402,4 +407,79 @@ a{
   max-width: 44%;
   text-align: center;
   margin-top: 72px;
+  }
+
+.certification .container .title{
+  margin-top: 60px;
+  margin-bottom: 400px;
+}
+
+.image-project .image{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+
+.text-project .container{
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 24px;
+}
+
+.text-project .container .image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-project .container .text{
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.layout .container .image{
+  width: 100%;
+.slide-project .list{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.slide-project .items{
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr;
+  background-color: var(--gray-background);
+}
+
+.slide-project .image{
+  width: 100%;
+}
+
+.slide-project .item{
+  padding: 40px 32px;
+}
+
+.slide-project .text{
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-weight: lighter;
+}
+
+.slide-project .button{
+  background-color: var(--white);
+  padding: 16px 24px;
+  font-weight: lighter;
+}
+
+.slide-project .button .icon{
+  margin-left: 8px;
+  }
+  
+.gallery .subtitle{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--black);
 }

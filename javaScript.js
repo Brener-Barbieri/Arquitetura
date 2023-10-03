@@ -8,3 +8,18 @@ menuButton.addEventListener("click", function() {
     menu.style.display = "block";
   }
 });
+
+var elms = document.getElementsByClassName( 'splide' );
+
+for ( var i = 0; i < elms.length; i++ ) {
+  new Splide( elms[ i ],{grid: {
+		rows: 2,
+		cols: 5,
+    gap : {
+			row: '1.5rem',
+			col: '1.5rem',
+		},
+  } }).mount(window.splide.Extensions );
+}
+
+
