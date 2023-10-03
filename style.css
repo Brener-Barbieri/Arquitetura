@@ -349,3 +349,20 @@ a{
   font-weight: lighter;
   text-align: center;
 }
+
+.splide__track{
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.gallery .title{
+  font-size: 3rem;
+  font-weight: lighter;
+  color: var(--gray);
+}
+
+.gallery .subtitle{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--black);
+}
